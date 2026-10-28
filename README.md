@@ -4,7 +4,7 @@
 
 We run a real company (offline services + web products + content) with a staff of two equal LLMs — one cloud, one local — plus six specialist agents, and one human owner who is not a programmer. This repository is the memory system we built for them: plain Markdown files, zero specialized memory software, and a protocol that survived daily production use.
 
-The full story is below. The copy-paste kit is in [`templates/`](templates/) and [`exam/`](exam/exam-form.md). Русская версия статьи — [README.ru.md](README.ru.md).
+The full story is below. The copy-paste kit is in the files of this repository (all templates + the exam form are in the repo root). Русская версия статьи — [README.ru.md](README.ru.md).
 
 ---
 
@@ -65,13 +65,13 @@ No semantic search over the vault yet (TOCs and reading suffice at our scale). N
 
 ## Take it
 
-- [`templates/01-core.md`](templates/01-core.md) — the CORE file
-- [`templates/02-diary.md`](templates/02-diary.md) — append-only diary
-- [`templates/03-canon.md`](templates/03-canon.md) — decision canon with rejected alternatives
-- [`templates/04-map.md`](templates/04-map.md) — memory map
-- [`templates/05-debts.md`](templates/05-debts.md) — open work board
-- [`templates/06-agents.md`](templates/06-agents.md) — agents hall (shared staff memory)
-- [`exam/exam-form.md`](exam/exam-form.md) — **the exam: the quality gate for every compression**
+- [`01-core.md`](01-core.md) — the CORE file
+- [`02-diary.md`](02-diary.md) — append-only diary
+- [`03-canon.md`](03-canon.md) — decision canon with rejected alternatives
+- [`04-map.md`](04-map.md) — memory map
+- [`05-debts.md`](05-debts.md) — open work board
+- [`06-agents.md`](06-agents.md) — agents hall (shared staff memory)
+- [`exam-form.md`](exam-form.md) — **the exam: the quality gate for every compression**
 
 MIT licensed. If you run something like this — your numbers in the issues are the most interesting thing this repo can collect.
 
