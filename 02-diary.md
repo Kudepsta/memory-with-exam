@@ -1,0 +1,13 @@
+# DIARY (template)
+
+> Append-only. One block per task. Mark blocks with your model/agent tag.
+> Big task = short digest: result / proof / numbers / lesson / next step.
+> Full reports go to separate files; the diary stays readable.
+> "SAVED" is forbidden without a path + file size.
+
+## YYYY-MM-DD (tag) — task title
+- Result: …
+- Proof: path + size
+- Numbers: …
+- Lesson: …
+- Next: …
