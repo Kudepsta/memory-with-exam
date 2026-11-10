@@ -52,6 +52,18 @@ Plus the memory map: 47,506 → 5,697 chars (12%). In money terms: re-reading tw
 
 A telling failure from the same series: off-the-shelf automatic summarizers on our material produced 24.7%, then 3.0%, then 22.7% (two of them leaking chain-of-thought into the text and losing whole days). The working digest came from careful manual compression by the duty model — which is exactly why the exam is mandatory, not optional.
 
+## November 2026 update: the industry caught up — and our first exam failure
+
+Three things happened since the first publication, all worth recording.
+
+**1. The file approach got external validation.** A [benchmark by the Letta team](https://www.letta.com/blog/benchmarking-ai-agent-memory) (August 2026) found that a plain filesystem agent — grep, open, search files — scored **74.0%** on a standard dialogue QA benchmark (LoCoMo), beating a specialized memory framework's best knowledge-graph variant at **68.5%**. The stated reason matches our field experience: models are excellent at file operations and iterative search, while single-hop "smart" stores are not. We have run file memory in daily production since August — it is nice to no longer be the only ones saying it out loud.
+
+**2. Consolidation went mainstream.** [Google Research's Sleep framework](https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning) (October 2026) argues that agent memory must consolidate in pauses — with a literal "dreaming" phase — or it degrades. Our weekly consolidation has been called "dreams" since August. The industry converged on our ritual, not the other way round.
+
+**3. Our first recall exam failed its own bar — and that is the point.** We added a second exam type: a monthly 20-question recall exam on company history, answered cold, honest "I don't remember" instead of guessing, bar 17/20 (template: [`08-recall-exam.md`](08-recall-exam.md)). The first run scored a self-graded 8–11 out of 20. Every failed topic pointed at one weak section — a period whose details lived only in the consolidated diary. We fixed the section, not the student. An exam that cannot fail is not an exam.
+
+Also added: [`07-session-flush.md`](07-session-flush.md) — flush every session in the same run (closing the gap with auto-extraction products), with an anti-duplicate read-back rule.
+
 ## Lessons that cost us real money
 
 1. **"Recorded" ≠ "done".** The word SAVED is forbidden in the diary without a path and a file size. We once lost three finished video deliverables that the journal said were "SAVED".
@@ -71,6 +83,8 @@ No semantic search over the vault yet (TOCs and reading suffice at our scale). N
 - [`04-map.md`](04-map.md) — memory map
 - [`05-debts.md`](05-debts.md) — open work board
 - [`06-agents.md`](06-agents.md) — agents hall (shared staff memory)
+- [`07-session-flush.md`](07-session-flush.md) — flush every session, before the context dies (added Nov 2026)
+- [`08-recall-exam.md`](08-recall-exam.md) — the second exam: recall, not compression (added Nov 2026)
 - [`exam-form.md`](exam-form.md) — **the exam: the quality gate for every compression**
 
 MIT licensed. If you run something like this — your numbers in the issues are the most interesting thing this repo can collect.
